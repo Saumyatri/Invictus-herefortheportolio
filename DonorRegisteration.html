@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        width: 25%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      
+      .header {
+        background-color: #c50f06;
+        color: white;
+        padding: 30px;
+        margin-bottom: 30px;
+      }
+      
+      .form-section {
+        background-color: #f2f2f2;
+        padding: 30px;
+        border-radius: 10px;
+      }
+      
+      .form-section h2 {
+        margin-bottom: 20px;
+      }
+      
+      label {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      
+      input[type="text"], input[type="email"], select {
+        padding: 10px;
+        width: 300px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+
+      input[type="number"], input[type="number"], select {
+        padding: 10px;
+        width: 300px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+
+      input[type="age"], input[type="age"], select {
+        padding: 10px;
+        width: 300px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+
+      input[type="blood-group"], input[type="blood-group"], select {
+        padding: 10px;
+        width: 50px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+
+      input[type="tel"], input[type="tel"], select {
+        padding: 10px;
+        width: 300px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+    
+      
+      input[type="submit"] {
+        background-color: #168caa;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+
+       
+      }
+
+      
+    </style>
+  </head>
+  <body    background="cassi-josh-lhnOvu72BM8-unsplash.jpg">
+    
+    
+    <div class="container">
+      <div class="header">
+        <h1>Blood Donation</h1>
+      </div>
+      <div class="form-section">
+        <h2>Donor Registration Form</h2>
+        <form>
+          <label for="name">    Name:</label>
+          <input type="text" id="name" name="name" required>
+          <br>
+          <label for="email">    Email:</label>
+          <input type="email" id="email" name="email" required>
+          <br>
+          <label for="blood-group">   Blood Group:</label>
+          <select id="blood-group" name="blood-group">
+            <option value="A+">A+</option>
+            <option value="B+">B+</option>
+            <option value="O+">O+</option>
+            <option value="AB+">AB+</option>
+            <option value="A-">A-</option>
+            <option value="B-">B-</option>
+            <option value="O-">O-</option>
+            <option value="AB-">AB-</option>
+          </select>
+          <br>
+          <label for="tel">Phone number:</label>
+          <input type="tel" id="tel" name="tel" required>
+          <br>
+          <label for="Age">Age:</label>
+          <input type="age" id="age" name="age" required>
+          <br>
+          <label for="number">Weight</label>
+          <input type="number" id="number" name="number" required>
+          <br>
+
+          
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
