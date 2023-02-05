@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Blood Donation Camps Registration</title>
+    <style>
+      /* Add styles for the page */
+      .form-container {
+        width: 500px;
+        margin: 0 auto;
+        padding: 30px;
+        border: 1px solid #000000;
+        background-color: #f79b6a;
+        border-radius: 10px;
+        text-align: center;
+      }
+      h1 {
+        margin-bottom: 30px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      input[type="time"],
+      input[type="tel"],
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body background="annie-spratt-0ZPSX_mQ3xI-unsplash.jpg">
+    <div class="form-container">
+      <h1>Blood Donation Camps Registration</h1>
+      <form action="process-registration.php" method="post">
+        <input type="text" placeholder="Organization Name" name="organizationName" required>
+        <select name="organizationtype" required>
+
+          <option value="" disabled selected>Organization Type</option>
+          <option value="nonprofitorganization">Non-Profit Organization</option>
+          <option value="privateorganization">Private Organization</option>
+          <option value="governmentorganization">Government Organization</option>
+         
+        </select>
+        <input type="text" placeholder="Organizer Name" name="organizername:" required>
+        <input type="text" placeholder="Co-Organizer Name" name="coorganizername:" required>
+        <input type="email" placeholder="Email" name="email" required>
+        <input type="tel" placeholder="Contact Number" name="contactNumber" required>
+        <input type="tel" placeholder="Organizers Contact Number" name="contactNumber" required>
+        <input type="time" placeholder="Start Time" name="starttime" required>
+        <input type="time" placeholder="End Time" name="endtime" required>
+        <select name="location" required>
+          <option value="" disabled selected>Location</option>
+          <option value="New York">Trombay</option>
+          <option value="Los Angeles">Kurla</option>
+          <option value="Chicago">Thane</option>
+          <option value="Houston">Kalyan</option>
+          <option value="Phoenix">Navi Mumbai</option>
+        </select>
+        <input type="text" placeholder="Camp Address" name="address" required>
+        <input type="number" placeholder="Estimated Participants" name="estimatedparticipants" required>
+        
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>

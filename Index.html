@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Blood Donation Home Page</title>
+ 
     <style>
       .navbar {
         overflow: hidden;
@@ -62,10 +67,53 @@
       .dropdown:hover .dropdown-content {
         display: block;
       }
+
+      .container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ef6666;
+  text-align: center;
+  
+}
+.container a{
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f1e7e7;
+  text-align: center;
+}
+.container b{
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f8f2f2;
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.stat-block {
+  width: 45%;
+}
+
+.stat-number {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.white-text {
+  color: white;
+}
+
+
       
     </style>
   </head>
-  <body   background="tim-marshall-cAtzHUz7Z8g-unsplash.jpg">
+  <body   background="alexis-fauvet-ZMUPMypbIos-unsplash.jpg">
+    <font colour=white>
     <div class="navbar">
         <a>   </a>
         <a>   </a>
@@ -93,15 +141,15 @@
         <a>   </a>
        
       <a href="Index.html">Home</a>
-      <a href="AboutUs.html">About Us</a>
+      <a href="AboutUs.html" target="_blank">About Us</a>
       <div class="dropdown">
         <button class="dropbtn">Donate Blood
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="DonorRegisteration.html">Registeration</a>
-          <a href="DonorLogin.html">Donor Login</a>
-          <a href="BloodDonationCamps.html">Blood Donation Camps</a>
+          <a href="DonorRegisteration.html" target="_blank">Registeration</a>
+          <a href="DonorLogin.html" target="_blank">Donor Login</a>
+          <a href="BloodDonationCamps.html" target="_blank">Blood Donation Camps</a>
         </div>
       </div> 
       <div class="dropdown">
@@ -109,16 +157,69 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="BloodAvail.html">Blood Availbility</a>
-          <a href="BloodBankDirectory.html">Blood Bank Directory</a>
-          <a href="#">Thalessemia Report</a>
+          <a href="BloodAvail.html" target="_blank">Blood Availbility</a>
+          <a href="BloodBankDirectory.html" target="_blank">Blood Bank Directory</a>
+          <a href="Registeredcamps.html">Register Blood Donation Camp</a>
         </div>
       </div> 
-      <div class="dropdown">
+      <div class="dropdown" class="white-text">
         <button class="dropbtn">Blood Bank Registeration
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
           <a href="#">Login</a>
           <a href="">Blood Bank Registeration</a>
+          </div>
+          </div>
+          </div>
+          <div class="container" class="white-text">
+  <h1>Blood Donation</h1>
+  <div class="stats" class="white-text">
+    <div class="stat-block">
+      <h2>Number of Registered Users</h2>
+      <p class="stat-number">1000</p>
+    </div>
+    <div class="stat-block">
+      <h2>Quantity of Blood Donated</h2>
+      <p class="stat-number" class="white-text">10000 litres</p>
+    </div>
+  </div>
+</div>
+<header>
+  <nav>
+    <ul>
+      <li class="white-text"><a href="Index.html">Home</a></li>
+      <li><a href="DonorRegisteration.html" target="_blank">Donate Blood</a></li>
+      <li><a href="BloodBankDirectory.html" target="_blank">Blood Banks</a></li>
+      <li><a href="BloodDonationCamps.html" target="_blank">Blood Donation Camps</a></li>
+      <li><a href="AboutUs.html" target="_blank">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <h1 class="white-text">Save a Life, Donate Blood</h1>
+    <p class="white-text">Every day, people need blood transfusions for various reasons, and your donation can help save a life. Consider donating blood today.</p>
+    <a href="DonorRegisteration.html" class="cta">Donate Blood Now</a>
+  </section>
+  <section class="stats" class="white-text">
+    <h2 class="white-text">Our Impact So Far</h2>
+    <div class="stat" class="white-text">
+      <p class="number" style="color: rgb(255, 251, 251);">12,000</p>
+      <p class="label" style="color: rgb(255, 255, 255);">Users Registered</p>
+    </div>
+    <div class="stat" >
+      <p class="number" style="color: rgb(251, 249, 249);">20,000</p>
+      <p class="label" style="color: rgb(255, 255, 255);">Units of Blood Donated</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <p class="white-text">&copy; Blood Donation 2023</p>
+</footer>
+
+</body>
+    
+</html>
+
           
